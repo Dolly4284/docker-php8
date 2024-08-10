@@ -1,3 +1,8 @@
 <?php
+$favcolor = "red";
 
-phpinfo();
+//echo "Hello World";
+
+
+
+//phpinfo();
