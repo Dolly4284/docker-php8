@@ -12,8 +12,7 @@ class Pages extends BaseController
         return view('welcome_message');
     }
 
-  
-    
+
         public function view(string $page = 'home')
         {
             if (! is_file(APPPATH . 'Views/pages/' . $page . '.php')) {
@@ -29,4 +28,4 @@ class Pages extends BaseController
         }
     }
     
-    
+
