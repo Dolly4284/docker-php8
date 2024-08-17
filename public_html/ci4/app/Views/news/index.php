@@ -8,7 +8,7 @@
 
         <div class="main">
             <?= esc($news_item['body']) ?> <br>
-            <em> <?= esc($news_item['author']) ?> </em>
+            <p> <em> Author: <?= esc($news_item['author']) ?> </em> </p>
         </div>
         <p><a href="/news/<?= esc($news_item['slug'], 'url') ?>">View article</a></p>
 

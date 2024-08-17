@@ -51,7 +51,7 @@ class News extends BaseController
     {
         helper('form');
 
-        $data = $this->request->getPost(['title', 'body']);
+        $data = $this->request->getPost(['title', 'body','author']);
 
         // Checks whether the submitted data passed the validation rules.
         if (! $this->validateData($data, [
