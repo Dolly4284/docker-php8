@@ -7,8 +7,11 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 
+use App\Controllers\Articles; 
 use App\Controllers\News; 
 use App\Controllers\Pages;
+
+$routes->resource('articles');
 
 $routes->get('news', [News::class, 'index']);        
 $routes->get('news/new', [News::class, 'new']); // Add this line
