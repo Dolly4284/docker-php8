@@ -57,6 +57,7 @@ class News extends BaseController
         if (! $this->validateData($data, [
             'title' => 'required|max_length[255]|min_length[3]',
             'body'  => 'required|max_length[5000]|min_length[10]',
+            'author'  => 'required|max_length[30]|min_length[1]',
         ])) {
             // The validation fails, so returns the form.
             return $this->new();
@@ -71,6 +72,7 @@ class News extends BaseController
             'title' => $post['title'],
             'slug'  => url_title($post['title'], '-', true),
             'body'  => $post['body'],
+            'author'  => $post['author'],
         ]);
 
         return view('templates/header', ['title' => 'Create a news item'])

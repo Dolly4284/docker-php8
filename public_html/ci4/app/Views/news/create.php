@@ -14,5 +14,9 @@
     <textarea name="body" cols="45" rows="4"><?= set_value('body') ?></textarea>
     <br>
 
+    <label for="author">Author</label>
+    <textarea name="author" cols="43" rows="1"><?= set_value('author') ?></textarea>
+    <br>
+
     <input type="submit" name="submit" value="Create news item">
 </form>
